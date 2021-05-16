@@ -1,0 +1,231 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+#app {
+  width: 100%;
+}
+
+#app > * + * {
+  margin-top: 1rem;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a,
+button {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+  padding: 0;
+}
+
+a:disabled,
+button:disabled {
+  color: #aaa;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.vocab-list {
+  width: 100%;
+}
+
+.vocab-list > * + * {
+  margin-top: 0.5rem;
+}
+
+.vocab-item {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.vocab-item > * + * {
+  margin-top: 0.5rem;
+}
+
+.vocab-item-translation {
+  font-style: italic;
+  color: #333;
+}
+
+.vocab-item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.vocab-item-meta > div > * + * {
+  margin-left: 1rem;
+}
+
+.vocab-item-meta-key {
+  font-weight: bold;
+}
+
+.pager-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pager > * + * {
+  margin-left: 0.25rem;
+}
+
+.search-bar > * + * {
+  margin-left: 1rem;
+}
+
+.search-bar > input {
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.search-bar > select {
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.home-links > * + * {
+  margin-left: 1rem;
+}
+
+.vocab-add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.vocab-add-form > * + * {
+  margin-top: 1rem;
+}
+
+.vocab-add-form > input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.vocab-add-submit-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-similar {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+hr {
+  margin: 0;
+  border: 1px dashed black;
+}
+
+.practice-heading-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.practice-question-number {
+  font-size: 0.85rem;
+}
+
+.practice-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.practice-form > * + * {
+  margin-top: 1rem;
+}
+
+.practice-form > input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.practice-translation {
+  font-style: italic;
+  color: #333;
+}
+
+.practice-result-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.practice-submit-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.practice-submit-bar > span {
+  font-size: 0.85rem;
+}
+
+.practice-submit-bar > span > span {
+  font-weight: bold;
+}
+
+.notifications {
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notifications > * + * {
+  margin-top: 1rem;
+}
+
+.notifications > div {
+  background-color: white;
+  padding: 1rem;
+  width: 300px;
+  border: 2px dashed black;
+}
